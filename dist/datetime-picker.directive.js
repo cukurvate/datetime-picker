@@ -314,8 +314,9 @@ var NguiDatetimePickerDirective = (function () {
                     (thisElBcr.bottom - window.innerHeight + 15) + 'px';
             }
             else {
-                // otherwise, show below
-                _this.nguiDatetimePickerEl.style.top = thisElBcr.height + 'px';
+                // otherwise, show to the right
+                _this.nguiDatetimePickerEl.style.top = '0';
+                _this.nguiDatetimePickerEl.style.left = (thisElBcr.width + 5) + 'px';
             }
             _this.nguiDatetimePickerEl.style.visibility = 'visible';
         });
@@ -332,11 +333,11 @@ var NguiDatetimePickerDirective = (function () {
                 },] },
     ];
     /** @nocollapse */
-    NguiDatetimePickerDirective.ctorParameters = [
+    NguiDatetimePickerDirective.ctorParameters = function () { return [
         { type: core_1.ComponentFactoryResolver, },
         { type: core_1.ViewContainerRef, },
         { type: forms_1.ControlContainer, decorators: [{ type: core_1.Optional }, { type: core_1.Host }, { type: core_1.SkipSelf },] },
-    ];
+    ]; };
     NguiDatetimePickerDirective.propDecorators = {
         'dateFormat': [{ type: core_1.Input, args: ['date-format',] },],
         'parseFormat': [{ type: core_1.Input, args: ['parse-format',] },],
