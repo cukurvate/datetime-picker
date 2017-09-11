@@ -1,5 +1,5 @@
 {
-  "name": "@ngui/datetime-picker",
+  "name": "cukurvate/datetime-picker",
   "version": "0.16.2",
   "description": "Angular2 DateTime Picker",
   "license": "ISC",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ng2-ui/datetime-picker.git"
+    "url": "git+https://github.com/cukurvate/datetime-picker.git"
   },
   "author": "",
   "bugs": {

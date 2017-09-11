@@ -348,8 +348,9 @@ export class NguiDatetimePickerDirective implements OnInit, OnChanges {
           (thisElBcr.bottom - window.innerHeight + 15) + 'px';
       }
       else {
-        // otherwise, show below
-        this.nguiDatetimePickerEl.style.top = thisElBcr.height + 'px';
+        // otherwise, show to the right
+        this.nguiDatetimePickerEl.style.top = '0';
+        this.nguiDatetimePickerEl.style.left = (thisElBcr.width + 5) + 'px';
       }
       this.nguiDatetimePickerEl.style.visibility = 'visible';
     });
